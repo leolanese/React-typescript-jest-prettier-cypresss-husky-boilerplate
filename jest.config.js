@@ -11,4 +11,5 @@ module.exports = {
     '^.+\\.(ts|tsx)$': 'ts-jest',
     '^.+\\.svg$': '<rootDir>/utils/svgTransform.js',
   },
+  testEnvironment: 'jsdom',
 };
