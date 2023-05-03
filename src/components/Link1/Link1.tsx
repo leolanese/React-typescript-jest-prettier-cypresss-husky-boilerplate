@@ -11,7 +11,7 @@ export const initialComponentProps = {
 
 export const dummyFunc = (a: number, b: number): number => a + b;
 
-export const Hello = (props: IProps): JSX.Element => (
+export const Link1 = (props: IProps): JSX.Element => (
   <div className={style.sample}>
     Message prop from {props.foo} and {props.bar}!
   </div>
