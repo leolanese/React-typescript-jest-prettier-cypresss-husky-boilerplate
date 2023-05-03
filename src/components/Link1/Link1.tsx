@@ -1,6 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 
 import style from './Link1.scss';
+
+import { IProps } from '../../interfaces/interfaces';
 
 export const initialComponentProps = {
   bar: 'Ipsum',
@@ -9,14 +11,8 @@ export const initialComponentProps = {
 
 export const dummyFunc = (a: number, b: number): number => a + b;
 
-
-interface IHelloProps {
-  foo: string;
-  bar: string;
-}
-
-export const Hello = (props: IHelloProps): JSX.Element => (
+export const Hello = (props: IProps): JSX.Element => (
   <div className={style.sample}>
-    Hello from {props.foo} and {props.bar}!
+    Message prop from {props.foo} and {props.bar}!
   </div>
 );
