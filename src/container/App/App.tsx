@@ -43,9 +43,9 @@ export const App = (): JSX.Element => (
 
       <nav className={style.routingWrapper}>
         <b>Routing: </b>
-        <NavigationLink to="/"  message={'message Link0'}>Link0</NavigationLink>
-        <NavigationLink to="/1" message={'message Link1'}>Link1</NavigationLink>
-        <NavigationLink to="/2" message={'message Link2'}>Link2</NavigationLink>
+        <NavigationLink to="/"  message={'My message to Link0'}>Link0</NavigationLink>
+        <NavigationLink to="/1" message={'My message to Link1'}>Link1</NavigationLink>
+        <NavigationLink to="/2" message={'My message to Link2'}>Link2</NavigationLink>
       </nav>
 
       <Routes>

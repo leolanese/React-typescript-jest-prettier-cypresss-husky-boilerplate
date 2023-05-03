@@ -7,7 +7,7 @@ export const Link2 = (props: IProps): JSX.Element => {
   const location = useLocation();
   const message = location.state?.message;
 
-  console.log(message); 
+  console.log('function component props message from container state:', message); 
 
   return (
     <>

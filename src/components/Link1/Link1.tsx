@@ -14,7 +14,7 @@ export const Link1 = (props: IProps): JSX.Element => {
   const location = useLocation();
   const message = location.state?.message;
 
-  console.log(message); 
+  console.log('function component props message from container state:', message); 
 
   return (
     <div className={style.sample}>
