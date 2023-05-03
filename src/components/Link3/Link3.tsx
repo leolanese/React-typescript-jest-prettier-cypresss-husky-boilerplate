@@ -11,7 +11,7 @@ export const Link3 = (props: IProps): JSX.Element => {
 
   return (
     <>
-      Link3: Message prop from {props.foo} and {props.bar}! Link number: {message}
+      Link3: Message prop from {props.foo} and {props.bar}! Message: {message}
     </>
   );
 };
