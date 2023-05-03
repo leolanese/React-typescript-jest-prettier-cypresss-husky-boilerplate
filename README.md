@@ -1,9 +1,9 @@
-# React | Typescript | Jest | Cypress - application boilerplate
+# React, Typescript, Jest, Prettier, 2e2 Cypress - setup application boilerplate
 
 
 1. Clone this repository to destination folder.
 
-`git clone https://github.com/rkoziol/react-typescript-jest-boilerplate.git`
+`git clone https://github.com/leolanese/react-typescript-jest-prettier-cypresss-husky-boilerplate`
 
 2. Install dependencies.
 
