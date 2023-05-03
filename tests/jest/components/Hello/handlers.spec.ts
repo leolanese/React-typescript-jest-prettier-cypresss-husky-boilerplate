@@ -1,4 +1,4 @@
-import { initialComponentProps, dummyFunc } from '@components/Hello/handlers';
+import { initialComponentProps, dummyFunc } from '@components/Link1/Link1';
 
 describe('Hello component handlers specs', () => {
   describe('initialComponentProps', () => {

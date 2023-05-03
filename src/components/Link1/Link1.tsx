@@ -1,6 +1,14 @@
 import * as React from 'react';
 
-import style from './Hello.scss';
+import style from './Link1.scss';
+
+export const initialComponentProps = {
+  bar: 'Ipsum',
+  foo: 'Lorem',
+};
+
+export const dummyFunc = (a: number, b: number): number => a + b;
+
 
 interface IHelloProps {
   foo: string;

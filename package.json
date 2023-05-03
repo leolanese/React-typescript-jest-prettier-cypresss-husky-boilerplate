@@ -1,7 +1,7 @@
 {
-  "name": "react-typescript-jest-boilerplate",
+  "name": "react-typescript-jest-prettier-cypress-boilerplate",
   "version": "1.4.0",
-  "description": "Boilerplate for React app with Typescript and Jest lib",
+  "description": "Boilerplate for React app with Typescript, Cypress and Jest lib",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open --hot --config ./webpack.dev.js",
@@ -24,6 +24,7 @@
     "typescript",
     "javascript",
     "jest",
+    "cypress",
     "boilerplate"
   ],
   "author": "",

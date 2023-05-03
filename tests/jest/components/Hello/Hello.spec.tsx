@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import { Hello } from '@components/Hello/Hello';
+import { Hello } from '@components/Link1/Link1';
 
 describe('Hello component', () => {
   test('should render component properly', () => {
