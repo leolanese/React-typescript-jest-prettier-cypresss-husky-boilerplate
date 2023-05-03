@@ -19,24 +19,15 @@
     "test:cypress:open": "cypress open",
     "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rkoziol/react-typescript-jest-boilerplate.git"
-  },
   "keywords": [
     "react",
     "typescript",
     "javascript",
     "jest",
-    "boilerplate",
-    "rkoziol"
+    "boilerplate"
   ],
-  "author": "rkoziol",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rkoziol/react-typescript-jest-boilerplate/issues"
-  },
-  "homepage": "https://github.com/rkoziol/react-typescript-jest-boilerplate#readme",
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint --fix"
