@@ -43,15 +43,17 @@ export const App = (): JSX.Element => (
 
       <nav className={style.routingWrapper}>
         <b>Routing: </b>
-        <NavigationLink to="/"  message={'My message to Link0'}>Link0</NavigationLink>
-        <NavigationLink to="/1" message={'My message to Link1'}>Link1</NavigationLink>
-        <NavigationLink to="/2" message={'My message to Link2'}>Link2</NavigationLink>
+        <NavigationLink to="/"  message={'My message to Link1'}>[Start]</NavigationLink>
+        <NavigationLink to="/1" message={'My message to Link1'}>[Link1]</NavigationLink>
+        <NavigationLink to="/2" message={'My message to Link2'}>[Link2]</NavigationLink>
+        <NavigationLink to="/3" message={'My message to Link3'}>[Link3]</NavigationLink>
       </nav>
 
       <Routes>
-        <Route path="/"  element={<Link1 />} />
-        <Route path="/1" element={<Link2 />} />
-        <Route path="/2" element={<Link3 />} />
+        <Route path="/" />
+        <Route path="/1" element={<Link1 />} />
+        <Route path="/2" element={<Link2 />} />
+        <Route path="/3" element={<Link3 />} />
       </Routes>
 
     </BrowserRouter>

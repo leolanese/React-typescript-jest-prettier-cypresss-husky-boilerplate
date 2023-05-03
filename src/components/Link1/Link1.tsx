@@ -1,13 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import style from './Link1.scss';
-
 import { IProps } from '../../interfaces/interfaces';
 
 export const initialComponentProps = {
-  bar: 'Ipsum',
-  foo: 'Lorem',
+  m1: 'Link1_initial_value',
+  m2: 'Link1_initial_value',
 };
 
 export const Link1 = (props: IProps): JSX.Element => {
@@ -17,8 +15,8 @@ export const Link1 = (props: IProps): JSX.Element => {
   console.log('function component props message from container state:', message); 
 
   return (
-    <div className={style.sample}>
-      Link1: Message prop from {props.foo} and {props.bar}! Message: {message}
-    </div>
+    <>
+      Link1: Message prop: `{props.m1}` + `{props.m2}`. Message: `{message}`
+    </>
   );
 };
