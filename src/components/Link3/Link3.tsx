@@ -1,3 +1,17 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-export const Link3 = (): JSX.Element => <div>This is a 3 page.</div>;
+import { IProps } from '../../interfaces/interfaces';
+
+export const Link3 = (props: IProps): JSX.Element => {
+  const location = useLocation();
+  const message = location.state?.message;
+
+  console.log(message); 
+
+  return (
+    <>
+      Link3: Message prop from {props.foo} and {props.bar}! Link number: {message}
+    </>
+  );
+};

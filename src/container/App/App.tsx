@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route, NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 import Link1 from '@components/Link1';
 import Link2 from '@components/Link2';
@@ -9,14 +9,25 @@ import { NavigationLinkProps } from '../../interfaces/interfaces';
 
 import style from './App.scss';
 
-const NavigationLink: React.FC<NavigationLinkProps> = ({ to, children }) => {
+interface NavigationLinkPropsExtended extends NavigationLinkProps {
+  message: string;
+}
+
+const NavigationLink: React.FC<NavigationLinkPropsExtended> = ({ to, children, message }) => {
+  const navigate = useNavigate();
   const location = useLocation();
   const isActive = location.pathname === to;
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    navigate(to, { state: { message } });
+  };
+
   return (
-    <NavLink to={to} 
-             className={isActive ? 
-              `${style.link} ${style.activeLink}` : 
+    <NavLink to={to}
+             onClick={handleLinkClick}
+             className={isActive ?
+              `${style.link} ${style.activeLink}` :
               style.link}>
       {children}
     </NavLink>
@@ -29,16 +40,16 @@ export const App = (): JSX.Element => (
     <h2>App.tsx</h2>
 
     <BrowserRouter>
-    
+
       <nav className={style.routingWrapper}>
         <b>Routing: </b>
-        <NavigationLink to="/">Link0</NavigationLink>
-        <NavigationLink to="/1">Link1</NavigationLink>
-        <NavigationLink to="/2">Link2</NavigationLink>
+        <NavigationLink to="/"  message={'message Link0'}>Link0</NavigationLink>
+        <NavigationLink to="/1" message={'message Link1'}>Link1</NavigationLink>
+        <NavigationLink to="/2" message={'message Link2'}>Link2</NavigationLink>
       </nav>
 
       <Routes>
-        <Route path="/" element={<Link1 />} />
+        <Route path="/"  element={<Link1 />} />
         <Route path="/1" element={<Link2 />} />
         <Route path="/2" element={<Link3 />} />
       </Routes>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 import style from './Link1.scss';
 
@@ -9,10 +10,15 @@ export const initialComponentProps = {
   foo: 'Lorem',
 };
 
-export const dummyFunc = (a: number, b: number): number => a + b;
+export const Link1 = (props: IProps): JSX.Element => {
+  const location = useLocation();
+  const message = location.state?.message;
 
-export const Link1 = (props: IProps): JSX.Element => (
-  <div className={style.sample}>
-    Message prop from {props.foo} and {props.bar}!
-  </div>
-);
+  console.log(message); 
+
+  return (
+    <div className={style.sample}>
+      Link1: Message prop from {props.foo} and {props.bar}! Message: {message}
+    </div>
+  );
+};

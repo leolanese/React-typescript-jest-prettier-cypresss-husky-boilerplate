@@ -8,4 +8,8 @@ export interface NavigationLinkProps {
 export interface IProps {
     foo: string;
     bar: string;
-  }
+}
+
+export interface IPropsExtended extends IProps {
+    message?: string;
+}
