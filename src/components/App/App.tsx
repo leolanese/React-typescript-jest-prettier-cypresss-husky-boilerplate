@@ -8,7 +8,9 @@ import style from './App.scss';
 
 export const App = (): JSX.Element => (
   <div className={style.componentWrapper}>
-    <h2>Hello App</h2>
+
+    <h2>App.tsx</h2>
+    
     <BrowserRouter>
       <nav className={style.routingWrapper}>
         <b>Routing: </b>
