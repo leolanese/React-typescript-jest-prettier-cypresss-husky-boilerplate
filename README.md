@@ -41,15 +41,13 @@
 
 `npm run test:cypress:open` - open Cypress application.
 
+---
+### :100: <i>Thanks!</i>
+#### Now, don't be an stranger. Let's stay in touch!
 
-### Useful information
-
-I focused on separate logic from presentation layer of component, so components are created according to this scheme:
-
-- **index.tsx** - main file with component declaration. You can put here a React Hooks features (eg.: useState, useEffects etc.), prepare component props, do some base logic etc. This file should return component view layer with component props set.
-- **Component.tsx** - file with view layer of component.
-- **Component.scss** - file with component style declaration.
-- **handlers.ts** - file where You can place useful function for component.
-
-Before You commit or push something on repository, Husky will run code lints and tests.
-The configuration files are in the main project folder.
+##### :radio_button: linkedin: <a href="https://www.linkedin.com/in/leolanese/" target="_blank">@LeoLanese</a>
+##### :radio_button: Twitter: <a href="https://twitter.com/LeoLanese" target="_blank">@LeoLanese</a>
+##### :radio_button: Portfolio: <a href="https://www.leolanese.com" target="_blank">www.leolanese.com</a>
+##### :radio_button: DEV.to: <a href="https://www.dev.to/leolanese" target="_blank">dev.to/leolanese</a>
+##### :radio_button: Blog: <a href="https://www.leolanese.com/blog" target="_blank">leolanese.com/blog</a>
+##### :radio_button: Questions / Suggestion / Recommendation: developer@leolanese.com
